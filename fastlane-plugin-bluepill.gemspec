@@ -10,12 +10,12 @@ Gem::Specification.new do |spec|
   spec.email         = %q{taichiro0709@gmail.com}
 
   spec.summary       = %q{Fastlane plugin to use bluepill in fastlane}
-  # spec.homepage      = "https://github.com/tbrand/fastlane-plugin-bluepill"
+  spec.homepage      = "https://github.com/tbrand/fastlane-plugin-bluepill"
   spec.license       = "MIT"
 
-  spec.files         = Dir["lib/**/*"] + %w(README.md LICENSE)
+  spec.files         = Dir["lib/**/*", "bin/*"] + %w(README.md LICENSE)
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
-  spec.require_paths = ['lib']
+  spec.require_paths = ['lib', 'bin']
 
   # Don't add a dependency to fastlane or fastlane_re
   # since this would cause a circular dependency
