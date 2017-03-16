@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.author        = %q{tbrand}
   spec.email         = %q{taichiro0709@gmail.com}
 
-  spec.summary       = %q{Plugin to use bluepill in fastlane}
-  # spec.homepage      = "https://github.com/<GITHUB_USERNAME>/fastlane-plugin-bluepill"
+  spec.summary       = %q{Fastlane plugin to use bluepill in fastlane}
+  # spec.homepage      = "https://github.com/tbrand/fastlane-plugin-bluepill"
   spec.license       = "MIT"
 
   spec.files         = Dir["lib/**/*"] + %w(README.md LICENSE)
