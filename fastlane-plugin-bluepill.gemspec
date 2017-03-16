@@ -6,8 +6,8 @@ require 'fastlane/plugin/bluepill/version'
 Gem::Specification.new do |spec|
   spec.name          = 'fastlane-plugin-bluepill'
   spec.version       = Fastlane::Bluepill::VERSION
-  spec.author        = %q{taicsuzu}
-  spec.email         = %q{taicsuzu@yahoo-corp.jp}
+  spec.author        = %q{tbrand}
+  spec.email         = %q{taichiro0709@gmail.com}
 
   spec.summary       = %q{Plugin to use bluepill in fastlane}
   # spec.homepage      = "https://github.com/<GITHUB_USERNAME>/fastlane-plugin-bluepill"
