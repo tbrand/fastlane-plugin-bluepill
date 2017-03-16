@@ -1,4 +1,4 @@
-# bluepill plugin
+# Bluepill plugin
 
 [![fastlane Plugin Badge](https://rawcdn.githack.com/fastlane/fastlane/master/fastlane/assets/plugin-badge.svg)](https://rubygems.org/gems/fastlane-plugin-bluepill)
 
@@ -10,17 +10,13 @@ This project is a [fastlane](https://github.com/fastlane/fastlane) plugin. To ge
 fastlane add_plugin bluepill
 ```
 
-## About bluepill
+## About Bluepill
 
-Plugin to use bluepill in fastlane
-
-**Note to author:** Add a more detailed description about this plugin here. If your plugin contains multiple actions, make sure to mention them here.
+[Bluepill](https://github.com/linkedin/bluepill) is powered by LinkedIn. By using this plugin, you can run iOS tests in parallel using multiple simulators.
 
 ## Example
 
 Check out the [example `Fastfile`](fastlane/Fastfile) to see how to use this plugin. Try it by cloning the repo, running `fastlane install_plugins` and `bundle exec fastlane test`.
-
-**Note to author:** Please set up a sample project to make it easy for users to explore what your plugin does. Provide everything that is necessary to try out the plugin in this project (including a sample Xcode/Android project if necessary)
 
 ## Run tests for this plugin
 
