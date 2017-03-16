@@ -7,7 +7,7 @@ module Fastlane
         cmd << " -a #{params[:app]}"
         cmd << " -o #{params[:output_dir]}"
         cmd << " -s #{params[:scheme]}"
-        cmd << " -d #{params[:device]}"
+        cmd << " -d \"#{params[:device]}\""
         cmd << " -n #{params[:number_of_simulators]}"
         cmd << " -H" if params[:headless]
         sh cmd
