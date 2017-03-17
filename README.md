@@ -18,6 +18,20 @@ fastlane add_plugin bluepill
 
 Check out the [example `Fastfile`](fastlane/Fastfile) to see how to use this plugin. Try it by cloning the repo, running `fastlane install_plugins` and `bundle exec fastlane test`.
 
+Sample code
+```ruby
+lane :test do
+  bluepill(
+    app: 'path/to/SomeApp.app',
+    scheme: 'path/to/SomeApp.xcscheme',
+    output_dir: 'path/to/output_dir',
+    device: 'iPhone 6',
+    number_of_simulators: 2,
+    headless: true
+  )
+end
+```
+
 ## Run tests for this plugin
 
 To run both the tests, and code style validation, run
