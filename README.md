@@ -2,6 +2,7 @@
 
 [![fastlane Plugin Badge](https://rawcdn.githack.com/fastlane/fastlane/master/fastlane/assets/plugin-badge.svg)](https://rubygems.org/gems/fastlane-plugin-bluepill)
 [![Build Status](https://travis-ci.org/tbrand/fastlane-plugin-bluepill.svg?branch=master)](https://travis-ci.org/tbrand/fastlane-plugin-bluepill)
+[![Gem Version](https://badge.fury.io/rb/fastlane-plugin-bluepill.svg)](https://badge.fury.io/rb/fastlane-plugin-bluepill)
 
 ## Getting Started
 
