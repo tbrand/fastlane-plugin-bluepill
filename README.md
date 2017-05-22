@@ -29,7 +29,8 @@ lane :test do
     output_dir: 'path/to/output_dir',
     device: 'iPhone 6',
     number_of_simulators: 2,
-    headless: true
+    headless: true,
+    reuse_simulator: true,
   )
 end
 ```
