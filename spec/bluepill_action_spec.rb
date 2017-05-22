@@ -9,8 +9,9 @@ describe Fastlane::Actions::BluepillAction do
       option_d = "iPhone 6"
       option_n = 4
       option_h = true
+      option_r = true
 
-      expect(Fastlane::Actions::BluepillAction).to receive(:sh).with("#{Fastlane::Actions::BluepillAction.bin_bluepill} -a #{option_a} -o #{option_o} -s #{option_s} -d \"#{option_d}\" -n #{option_n} -H")
+      expect(Fastlane::Actions::BluepillAction).to receive(:sh).with("#{Fastlane::Actions::BluepillAction.bin_bluepill} -a #{option_a} -o #{option_o} -s #{option_s} -d \"#{option_d}\" -n #{option_n} -H --reuse-simulator")
 
       Fastlane::Actions::BluepillAction.run({
                                               app: option_a,
@@ -18,7 +19,8 @@ describe Fastlane::Actions::BluepillAction do
                                               output_dir: option_o,
                                               device: option_d,
                                               number_of_simulators: option_n,
-                                              headless: option_h
+                                              headless: option_h,
+                                              reuse_simulator: option_r
                                             })
     end
   end

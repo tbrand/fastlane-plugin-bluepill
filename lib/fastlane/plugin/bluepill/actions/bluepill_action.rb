@@ -10,6 +10,7 @@ module Fastlane
         cmd << " -d \"#{params[:device]}\""
         cmd << " -n #{params[:number_of_simulators]}"
         cmd << " -H" if params[:headless]
+        cmd << " --reuse-simulator" if params[:reuse_simulator]
         sh cmd
       end
 
@@ -66,7 +67,13 @@ module Fastlane
                                        description: "number of simulators to run in parallel. (bluepill only)",
                                        is_string: false,
                                        optional: false,
-                                       default_value: 4)
+                                       default_value: 4),
+          FastlaneCore::ConfigItem.new(key: :reuse_simulator,
+                                       env_name: "BLUEPILL_REUSE_SIMULATOR",
+                                       description: "reuse simulator or not",
+                                       is_string: false,
+                                       optional: true,
+                                       default_value: false)
         ]
       end
 
