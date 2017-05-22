@@ -203,3 +203,9 @@ Style/IfInsideElse:
 # Sometimes we just want to 'collect'
 Style/CollectionMethods:
   Enabled: false
+
+FileName:
+  Exclude:
+    - '**/Rakefile'
+    - '**/Gemfile'
+    - '**/fastlane-plugin-bluepill.gemspec'
