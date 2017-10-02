@@ -4,9 +4,9 @@ module Fastlane
       def self.run(params)
         UI.message("Start test by using Bluepill: https://github.com/linkedin/bluepill")
         cmd =  bin_bluepill.to_s
+        cmd << " #{params[:xctestrun]}"
         cmd << " -a #{params[:app]}"
         cmd << " -o #{params[:output_dir]}"
-        cmd << " -s #{params[:scheme]}"
         cmd << " -d \"#{params[:device]}\""
         cmd << " -n #{params[:number_of_simulators]}"
         cmd << " -H" if params[:headless]
@@ -35,9 +35,9 @@ module Fastlane
 
       def self.available_options
         [
-          FastlaneCore::ConfigItem.new(key: :scheme,
-                                       env_name: "BLUEPILL_SCHEME_PATH",
-                                       description: "scheme path (.xcscheme)",
+          FastlaneCore::ConfigItem.new(key: :xctestrun,
+                                       env_name: "BLUEPILL_XCTESTRUN",
+                                       description: "The path to the .xctestrun file that xcode leaves",
                                        optional: false,
                                        is_string: true),
           FastlaneCore::ConfigItem.new(key: :output_dir,
