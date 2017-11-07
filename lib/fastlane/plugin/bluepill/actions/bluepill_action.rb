@@ -6,6 +6,7 @@ module Fastlane
         cmd =  bin_bluepill.to_s
         cmd << " #{params[:xctestrun]}"
         cmd << " -a #{params[:app]}"
+        cmd << " -s #{params[:scheme]}"
         cmd << " -o #{params[:output_dir]}"
         cmd << " -d \"#{params[:device]}\""
         cmd << " -n #{params[:number_of_simulators]}"
@@ -43,6 +44,11 @@ module Fastlane
           FastlaneCore::ConfigItem.new(key: :output_dir,
                                        env_name: "BLUEPILL_OUTPUT_DIR",
                                        description: "output directory for bluepill logs and reports",
+                                       optional: false,
+                                       is_string: true),
+          FastlaneCore::ConfigItem.new(key: :scheme,
+                                       env_name: "BLUEPILL_SCHEME_PATH",
+                                       description: "scheme path (.xcscheme)",
                                        optional: false,
                                        is_string: true),
           FastlaneCore::ConfigItem.new(key: :app,

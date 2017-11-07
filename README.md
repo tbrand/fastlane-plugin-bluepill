@@ -25,6 +25,7 @@ Sample code
 lane :test do
   bluepill(
     app: 'path/to/SomeApp.app',
+    scheme: 'path/to/SomeApp.xcscheme',
     xctestrun: 'path/to/SomeApp.xctestrun',
     output_dir: 'path/to/output_dir',
     device: 'iPhone 6',
